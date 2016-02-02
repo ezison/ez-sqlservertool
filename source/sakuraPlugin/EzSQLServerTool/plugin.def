@@ -1,0 +1,27 @@
+;-------------------------------------------------------------------------------
+; plugin.def - SQLServer Tool
+;-------------------------------------------------------------------------------
+;
+; Copyright(c) 2016 EZOLAB Co., Ltd. All Rights Reserved.
+;
+;-------------------------------------------------------------------------------
+;プラグイン定義ファイルv1
+[Plugin]
+Id=EzSQLServerTool
+Name=Ez SQLServer Tool
+Description=SQLServerを便利に扱うためのツール
+Type=wsh
+Author=Ezolab
+Version=1.0.0.0
+Url=http://ezolab.co.jp/
+
+[Wsh]
+UseCache=0
+
+[Command]
+;
+C[1]=vbs\DBConnection.vbs
+C[1].Label=DB接続
+;
+C[2]=vbs\DBStoredGet.vbs
+C[2].Label=定義へ移動
