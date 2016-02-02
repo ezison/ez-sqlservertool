@@ -235,6 +235,21 @@ Function TryExclusiveOpenFile(ByVal fileName)
 End Function
 
 ' ==============================================================================
+' Summary : フォルダを生成する。サブフォルダも含めて作成する。
+' Inputs  : fileName    : ファイルパス
+' Returns : 削除に成功したファイルパス
+' ==============================================================================
+Function CreateFolder(ByVal fileName)
+
+	Dim oShell
+	Set oShell = CreateObject("WSCript.shell")
+	oShell.run "cmd /c MD " & fileName, 0, 1
+	
+	Set oShell = Nothing
+
+End Function
+
+' ==============================================================================
 ' Summary : Iniファイル操作クラス。
 ' ==============================================================================
 Class IniFile

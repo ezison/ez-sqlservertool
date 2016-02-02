@@ -107,7 +107,7 @@ Sub Main
 		strTempFolder = fs.BuildPath(objTempFolder.Path, "dbstored\" & dbDatabase)
 
 		If Not fs.FolderExists(strTempFolder) Then
-			fs.CreateFolder strTempFolder
+			CreateFolder strTempFolder
 		End If
 
 		Dim strFilePath
