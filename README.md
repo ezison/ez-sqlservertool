@@ -1,0 +1,2 @@
+# ez-sqlservertool
+SQLServer Tool.
